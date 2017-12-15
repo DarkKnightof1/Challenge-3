@@ -7,11 +7,28 @@
 
 </head>
 <body>
+
+<audio id="myAudio">
+    <source src="Mariah%20Carey%20-%20All%20I%20Want%20For%20Christmas%20Is%20You%20-%20Lyrics_128k.ogg" type="audio/ogg">
+    <source src="Mariah%20Carey%20-%20All%20I%20Want%20For%20Christmas%20Is%20You%20-%20Lyrics.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<button onclick="playAudio()" type="button">Play/Pause</button>
+
 <script>
-
-
-
+    var x = document.getElementById("myAudio");
+    x.play();
+    function playAudio() {
+        if (x.play()) {
+            x.pause();
+        }
+        else {
+            x.play();
+        }
+    }
 </script>
+
 <div class="container">
     <div class="tree">
         <div class="tree__row">
@@ -280,10 +297,12 @@
     <div class="snow__flake"></div>
 </div>
 
-<div class="message">
-    <p class="message__text">Refresh this pen in edit view to see a random() tree colour and animation pattern.</p>
-    <p class="message__text">Merry Christmas from <a href="https://twitter.com/namboozle" title="Andrew Hawkes on Twitter" target="_blank">@namboozle</a></p>
+<div class="message1">
+    <p class="message__text">MERRY</p>
 </div>
-
+<div class="message2">
+    <p class="message__text">CHRISTMAS!</p>
+</div>
+<h1></h1>
 </body>
 </html>

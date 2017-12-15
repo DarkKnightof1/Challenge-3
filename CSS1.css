@@ -5,6 +5,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
+h1 {
+
+  text-align: center;
+  margin-left: 80px;
+}
+
 html {
   font-size: 16px;
 }
@@ -12,6 +18,10 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background: #222;
+}
+
+button {
+  color: grey;
 }
 
 .container {
@@ -533,23 +543,34 @@ body {
   background-image: url(https://andrew-hawkes-media.s3.amazonaws.com/codepen/snow/snow-flake-4.png);
 }
 
-.message {
+.message1 {
   display: block;
   position: fixed;
   z-index: 500;
-  right: 20px;
-  bottom: 20px;
+  left: 240px;
+  top: 240px;
   width: 280px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.4);
+  background: none;
+}
+
+.message2 {
+  display: block;
+  position: fixed;
+  z-index: 500;
+  right: 320px;
+  top: 240px;
+  width: 280px;
+  padding: 20px;
+  background: none;
 }
 
 .message__text {
   margin: 0 0 14px 0;
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 80px;
+  font-weight: 800;
   line-height: 1.25;
-  color: #fff;
+  color: goldenrod;
 }
 
 .message__text:last-of-type {
@@ -565,7 +586,7 @@ body {
 }
 
 .message__text a:hover, .message__text a:focus {
-  color: #f9d8a0;
+  color: darkred;
 }
 
 @-webkit-keyframes sparkle {
